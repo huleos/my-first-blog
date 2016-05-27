@@ -34,3 +34,15 @@ article .post-title a:focus{
 	color: #2793C7;
 	text-decoration: none;
 }
+
+.new-post{
+  float: right;
+  margin-top: 12px;
+  font-weight: bold;
+}
+
+.btn-edit{
+	  position: absolute;
+  top: 12px;
+  right: 28px;
+}
