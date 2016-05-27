@@ -1,0 +1,21 @@
+header .navbar{
+	background: #333;
+}
+
+header .container .navbar-brand{
+	color: #f1f1f1;
+	font-size: 24px;
+}
+
+header .container .navbar-brand span{
+	font-size: 18px;
+	font-weight: lighter;
+}
+
+header .container .navbar-brand:hover{
+	color: #999;
+}
+
+article time{
+	color: #999;
+}

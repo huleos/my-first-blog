@@ -1,22 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Post List</title>
-</head>
-<body>
-	<header>
-		<h1><a href="/">huleos</a></h1>
-	</header>
+{% extends 'blog/base.html' %}
+
+{% block content %}
 	{% for post in posts %}
-	<article>
-		<time>{{ post.published_date }}</time>
+	<article class="col-sm-12">
 		<h2>
-			<a href="">{{ post.title }}</a>
+			<a href="">{{ post.title }}</span></a>
 		</h2>
+		<time>{{ post.published_date }}</time>
 		<p>{{ post.text|linebreaks}}</p>
 		<hr>
 	</article>
 	{% endfor %}
-</body>
-</html>
+{% endblock %}
