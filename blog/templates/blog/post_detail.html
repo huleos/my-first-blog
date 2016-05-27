@@ -1,0 +1,11 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+<article class="col-sm-12">
+	<time>{{ post.published_date | date }}</time>
+	<h1 class="post-title">{{ post.title }}</h1>
+	<span><strong>By {{ post.author }}</strong></span>
+	<p>{{ post.text|linebreaks}}</p>
+	<hr>
+</article>
+{% endblock %}

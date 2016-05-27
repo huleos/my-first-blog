@@ -3,10 +3,11 @@
 {% block content %}
 	{% for post in posts %}
 	<article class="col-sm-12">
-		<h2>
-			<a href="">{{ post.title }}</span></a>
+		<time>{{ post.published_date | date }}</time>
+		<h2 class="post-title">
+			<a href="{% url 'blog.views.post_detail' pk=post.pk %}">{{ post.title }}</span></a>
 		</h2>
-		<time>{{ post.published_date }}</time>
+		<span><strong>By {{ post.author }}</strong></span>
 		<p>{{ post.text|linebreaks}}</p>
 		<hr>
 	</article>

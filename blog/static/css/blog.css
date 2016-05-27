@@ -19,3 +19,18 @@ header .container .navbar-brand:hover{
 article time{
 	color: #999;
 }
+
+article .post-title{
+	margin-top: 0;
+	font-weight: bold;
+}
+
+article .post-title a{
+	color: #222;
+}
+
+article .post-title a:hover,
+article .post-title a:focus{
+	color: #2793C7;
+	text-decoration: none;
+}
